@@ -1,0 +1,76 @@
+NAM Test
+
+1. What page element selectors do you know?
+Answer: 
+The different types of CSS selectors used for Cypress are as follows:-
+* Using ID name
+* Using Class name
+* Using Attributes
+* Using Tag name
+
+CSS Syntax are as follows
+ID name	 #idname
+Class name	.classname[make sure that there is no space between the class name, if so instead of space replace it by .
+Attributes	[attribute=value]
+Tag name	tagname#idname [OR]
+tagname.classname [OR]
+tagname[attribute=value]
+
+2. Rate your JS knowledge from 0 to 10 (or another language, just indicate)
+Answer: 6 Started learning Cypress due to which i have to learn JS
+
+3. Rate your Cypress knowledge from 0 to 10
+Answer: 7
+
+4. Use selectors to get a list of all admins
+ <ul class="users_list">
+     <li class="admin">one</li>
+      <li class="user">two</li>
+      <li class="admin">three</li>
+      <li class="user">four</li>
+    </ul>
+Answer: ul[class="users_list"] li[class="admin"]
+
+5. Use selectors to list all users by data attribute name="user"
+<ul class="users_list">
+     <li class="admin">one</li>
+      <li name="user"">two</li>
+      <li class="admin">three</li>
+      <li name="user">four</li>
+    </ul>
+Answer: ul[class="users_list"] li[name="user"]
+
+6. Filter the list by color attribute. The condition is that you first get the complete list of elements and then 
+filter on the attribute. You need to get a list of items with a red marker.
+<ul class="users_list">
+     <li class="user" color=”red”>test1</li>
+      <li class="user" color=”green”>test2</li>
+      <li class="user" color=”red”>test3</li>
+      <li class="user" color=”green”>test4</li>
+      <li class="user" color=”red”>test5</li>
+      <li class="user" color=”green”>test6</li>
+      <li class="user" color=”green”>test7</li>
+      <li class="user" color=”red”>test8</li>
+      <li class="user" color=”green”>test9</li>
+      <li class="user" color=”red”>test10</li>
+      <li class="user" color=”green”>test11</li>
+    </ul>
+Answer: ul[class="users_list"] li[color=”red”]
+
+7. What actions for elements do you know?
+Answer: click(), type(), check(), uncheck(), clear(), select(), dblclick(), rightclick(), scrollIntoView()
+
+8. How to get an element using Cypress?
+Answer: cy.get(‘selector’), cy.contains(‘name’),  cy.find(‘name’), cy.get(‘li’).first(); cy.get(‘li’).last(), cy.get(‘li’).eq(2)
+
+9. How to work with select in Cypress?
+Answer: cy.get('select').select('apples').should('have.value', '456')
+
+10. What actions can be applied to an element using Cypress?
+Answer: click(), type(), check(), uncheck(), clear(), select(), dblclick(), rightclick(), scrollIntoView()
+
+11. Does Сypress support drag and drop?
+Answer: Yes Сypress support drag and drop. We have to install npm install --save-dev @4tw/cypress-drag-drop. Then we have to import code in command.js import '@4tw/cypress-drag-drop'; then we have to write a function due to which we can achieve drag and drop.
+
+12. Does Сypress support file uploads? How?
+Answer: Yes Сypress support  file upload. We have to install npm install --save-dev cypress-file-upload. Then we have to import code in command.js import 'cypress-file-upload’; then we have to write a function due to which we can achieve file upload.
